@@ -6,9 +6,11 @@
 </head>
 <body>
 <h1 th:text"${tituloH1}"></h1>
-<a href="http://localhost:8080/home">Home</a>
+<a th:href="@{/home}">Home</a>
 <br/>
-<a href="http://localhost:8080/libros/all">Listado de libros</a>
+<a th:href="@{/libros/all}">Listado de libros</a>
+<br/>
+<a th:href="@{/usuarios/all}">Listado de usuarios</a>
 <br/>
 <img th:src="@{/images/estanteria.jpeg}" alt="Imagen de librería"></img>
 </body>

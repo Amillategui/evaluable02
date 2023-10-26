@@ -16,20 +16,18 @@ INSERT INTO libros (nobre_libro, cantidad_Ejemplares, editorial, tematica) VALUE
 INSERT INTO libros (nobre_libro, cantidad_Ejemplares, editorial, tematica) VALUES ('La Insoportable Levedad del Ser', 21, 'Planeta', 'novela filosófica');
 INSERT INTO libros (nobre_libro, cantidad_Ejemplares, editorial, tematica) VALUES ('Totem y Tabú', 36, 'Planeta', 'Psicología');
 INSERT INTO libros (nobre_libro, cantidad_Ejemplares, editorial, tematica) VALUES ('El Manifiesto', 52, 'Planeta', 'filosofía');
-INSERT INTO libros (nobre_libro, cantidad_Ejemplares, editorial, tematica) VALUES ('Drácula', 7, 'Planeta', 'terror');
-INSERT INTO libros (nobre_libro, cantidad_Ejemplares, editorial, tematica) VALUES ('Drácula', 7, 'Planeta', 'terror');
-INSERT INTO libros (nobre_libro, cantidad_Ejemplares, editorial, tematica) VALUES ('Drácula', 7, 'Planeta', 'terror');
-INSERT INTO libros (nobre_libro, cantidad_Ejemplares, editorial, tematica) VALUES ('Drácula', 7, 'Planeta', 'terror');
-INSERT INTO libros (nobre_libro, cantidad_Ejemplares, editorial, tematica) VALUES ('Drácula', 7, 'Planeta', 'terror');
-INSERT INTO libros (nobre_libro, cantidad_Ejemplares, editorial, tematica) VALUES ('Drácula', 7, 'Planeta', 'terror');
-INSERT INTO libros (nobre_libro, cantidad_Ejemplares, editorial, tematica) VALUES ('Drácula', 7, 'Planeta', 'terror');
-INSERT INTO libros (nobre_libro, cantidad_Ejemplares, editorial, tematica) VALUES ('Drácula', 7, 'Planeta', 'terror');
-INSERT INTO libros (nobre_libro, cantidad_Ejemplares, editorial, tematica) VALUES ('Drácula', 7, 'Planeta', 'terror');
-INSERT INTO libros (nobre_libro, cantidad_Ejemplares, editorial, tematica) VALUES ('Drácula', 7, 'Planeta', 'terror');
-INSERT INTO libros (nobre_libro, cantidad_Ejemplares, editorial, tematica) VALUES ('Drácula', 7, 'Planeta', 'terror');
-INSERT INTO libros (nobre_libro, cantidad_Ejemplares, editorial, tematica) VALUES ('Drácula', 7, 'Planeta', 'terror');
 
-INSERT INTO usuarios (nombre, apellidos, direccion, email) VALUES ('Rosario', 'López', 'Calle Mayor 10', 'rosariolopez@example.com');
+
+
+INSERT INTO usuarios (nombre, apellidos, direccion, email) VALUES ('María', 'Pérez', 'Calle Sol 11', 'mariaperez@example.com');
 INSERT INTO usuarios (nombre, apellidos, direccion, email) VALUES ('Rafael', 'Romero', 'Avenida del amor 10', 'rafaelromero@example.com');
-
+INSERT INTO usuarios (nombre, apellidos, direccion, email) VALUES ('Francisco', 'García', 'Estrella', 'franciscogarcia@example.com');
+INSERT INTO usuarios (nombre, apellidos, direccion, email) VALUES ('Susana', 'González', 'San Lorenzo', 'susanagonzalez@example.com');
+INSERT INTO usuarios (nombre, apellidos, direccion, email) VALUES ('Marta', 'Fernández', 'Avenida de la Paz 11', 'martafernandez@example.com');
+INSERT INTO usuarios (nombre, apellidos, direccion, email) VALUES ('Cristina', 'Rabat', 'Sierra Morena 22', 'cristinarabat@example.com');
+INSERT INTO usuarios (nombre, apellidos, direccion, email) VALUES ('Rosario', 'flores', 'Puerto de la Mora 12', 'Rosarioflores@example.com');
+INSERT INTO usuarios (nombre, apellidos, direccion, email) VALUES ('Rocio', 'Álvarez', 'Avenida de la Filosofía 14', 'rocioalvarez@example.com');
+INSERT INTO usuarios (nombre, apellidos, direccion, email) VALUES ('Victoria', 'sánchez', 'Alemanes 13', 'victoriasanchez@example.com');
+INSERT INTO usuarios (nombre, apellidos, direccion, email) VALUES ('Iván', 'Rosales', 'Marqués de Parads 53', 'ivanrosales@example.com');
+INSERT INTO usuarios (nombre, apellidos, direccion, email) VALUES ('Ignacio', 'Ruiz', 'San Felipe 1', 'ignacioruiz@example.com');
 

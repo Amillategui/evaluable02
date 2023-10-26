@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title th:text="${titulo}"></title>
+</head>
+<body>
+<h1 th:text="${cabecera}"></h1>
+<a th:href="@{/usuarios/form}">Crear usuarios</a>
+<p th:text="'Total de usuarios: ' + ${cantidad}"></p>
+<table>
+	<thead>
+		<tr>
+			<td>id</td>
+			<td>Nombre del usuario</td>
+			<td>Apelllidos</td>
+			<td>Direccion</td>
+			<td>E-mail</td>
+			
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="usuarios: ${usuarios}">
+
+			<td th:text="${usuarios.id}"></td>
+			<td th:text="${usuarios.nombre}"></td>
+			<td th:text="${usuarios.apellidos}"></td>
+			<td th:text="${usuarios.direccion}"></td>
+			<td th:text="${usuarios.email}"></td>
+			<td><a th:href="@{/usuarios/borrar/} + ${usuarios.id}">Borrar</a>
+			<td><a th:href="@{/usuarios/form/} + ${usuarios.id}">Editar</a>
+            </td>
+
+		</tr>	
+	</tbody>
+	
+</table>
+
+</body>
+</html>

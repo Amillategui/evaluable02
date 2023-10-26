@@ -1,5 +1,7 @@
 package com.midominio.evaluable2.service;
 
+
+
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,9 +17,10 @@ public class UsuarioService {
 	@Autowired
 	UsuarioRepository usuarioRepository;
 	
-	private long count() {
-	return usuarioRepository.count();
-}
+	public long count() {
+		return usuarioRepository.count();
+
+	}
 	
 	public void deleteAll() {
 		usuarioRepository.deleteAll();
@@ -38,7 +41,18 @@ public class UsuarioService {
 		return usuarioRepository.findById(id);
 	}
 	public void deleteById(Long id) {
+		usuarioRepository.deleteById(id);
 		
+	}
+	
+	public Iterable<Usuario> todosLosUsuarios() {
+		
+		return usuarioRepository.findAll();
+	}
+
+	
+	public Usuario  save(Usuario usuario) {
+		return usuarioRepository.save(usuario);
 	}
 	
 	

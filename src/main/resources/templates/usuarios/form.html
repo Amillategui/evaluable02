@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title th:text="${titulo}"></title>
+</head>
+<body>
+	
+	
+
+<h1 th:text="${cabecera}"></h1>
+<form th:action="@{/usuarios/form}" th:object="${usuario}" method="post">
+Nombre del libro
+<input type="text" th:field="*{nombre}"/>
+<br/>
+Cantidad de ejemplares
+<input type="text" th:field="*{apellidos}"/>
+<br/>
+Editorial
+<input type="text" th:field="*{direccion}"/>
+<br/>
+Tematica
+<input type="text" th:field="*{email}"/>
+<br/>
+<input type="submit" value="Guardar"/>
+
+<input type="hidden" th:field="*{id}"/>
+
+</form>
+</body>
+
+</html>

@@ -1,5 +1,7 @@
 package com.midominio.evaluable2.service;
 
+
+
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,15 +19,43 @@ LibroRepository libroRepository;
 
 
 
-private long count() {
+public long count() {
 	return libroRepository.count();
 
 }
+
+
+public Iterable<Libro> findAll (){
+	return libroRepository.findAll();
+}
+
+
+public Iterable<Libro> todosLosLibros() {
+	
+	return libroRepository.findAll();
+}
+
+
+
+
+
+
+public void deleteById(Long id) {
+	
+	libroRepository.deleteById(id);
+	
+}
+
+public Libro  save(Libro libro) {
+	return libroRepository.save(libro);
+}
+
 	
 public void deleteAll() {
 	libroRepository.deleteAll();
 
 }
+
 
 public boolean exitsById(Long id) {
 	return libroRepository.existsById(id);
@@ -33,16 +63,12 @@ public boolean exitsById(Long id) {
 	
 }
 
-public Iterable<Libro> findAll (){
-	return libroRepository.findAll();
-}
 
 
 public Optional<Libro> findById(Long id){
 	
 	return libroRepository.findById(id);
 }
-public void deleteById(Long id) {
-	
-}
+
+
 }
